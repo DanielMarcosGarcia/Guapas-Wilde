@@ -1,0 +1,20 @@
+footer{
+    padding: 1rem;
+    background-color: $bg-color-rosa;
+    border-top: 1px solid rgb(155, 110, 168);
+}
+.footer-flex{
+    display: flex;
+    justify-content: center;
+}
+.face{
+    color: black;
+}
+.insta{
+    color: black;
+}
+
+.footer-span{
+    color: $text-color-gris2;
+    font-family: $font-family3;
+}

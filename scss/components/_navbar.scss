@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    justify-content: center;
+}
+.navlista{
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.navlista:hover{
+    transform: scale(1.05);
+    color: rgb(190, 27, 177);
+}
+.inicio{
+    color:rgb(94, 49, 219);
+    font-weight: bold;
+}
+@media (max-width:992px){
+    nav{
+        display: flex;
+        justify-content: left;
+    }
+}

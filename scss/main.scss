@@ -1,0 +1,16 @@
+@import "./utils/variable";
+@import "./utils/mixin";
+
+@import "./base/base";
+
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/boton";
+@import "./components/footer";
+
+@import "./pages/contacto";
+@import "./pages/index";
+@import "./pages/turnos";
+@import "./pages/promociones";
+@import "./pages/servicios";
+

@@ -1,0 +1,56 @@
+.zona-encabezado{
+    background-color: $bg-color-negro;
+    padding: $p-5;
+}
+.zona-titulo{
+    text-align: center;
+    font-family: $font-family;
+    color: $text-color-blanco;
+}
+.zona-texto{
+    text-align: center;
+    color: $text-color-blanco;
+    font-family: $font-family2;
+    font-size: $font-size-m;
+}
+
+.contenedor-turno{
+    padding: $p-5;
+    background-color: $bg-color-rosa;
+}
+
+.turno-flex{
+    @include flex-column();
+    padding: $p-3;
+}
+
+.titulo-turno{
+text-align: center;
+font-family: $font-family;
+font-size: $font-size-xl;
+padding: $p-3;
+}
+
+.texto-turno-1{
+    text-align: center;
+    font-size: $font-size-m;
+    font-family: $font-family2;
+}
+
+.texto-turno-2{
+    text-align: center;
+    font-family: $font-family3;
+}
+
+.texto-turno-3{
+    text-align: center;
+    font-family: $font-family2;
+    font-size: $font-size-s;
+    font-weight: bold;
+}
+
+.titulo-formulario{
+    text-align: center;
+    padding-bottom: $p-4;
+    font-family: $font-family;
+}

@@ -1,0 +1,144 @@
+h1 {
+    color: rgb(190, 27, 177);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 4em;
+    font-family: $font-family3
+}
+
+h1:hover {
+    color: rgb(94, 49, 219);
+    transform: scale(1.05);
+}
+
+
+.titulo-main {
+    text-align: center;
+
+    & h2 {
+        color: $text-color-violeta;
+        font-family: $font-family
+    }
+}
+
+.presentacion-main {
+    padding: $p-4;
+    background-color: $bg-color-violeta2;
+
+    .info-index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: $p-4;
+    }
+
+    & div h3 {
+        text-align: center;
+        font-family: $font-family
+    }
+
+    & div p {
+        text-align: center;
+        font-family: $font-family2
+    }
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+.titulo-intermedio {
+    text-align: center;
+
+    & div {
+        padding: $p-2;
+    }
+
+    & div h2 {
+        font-family: $font-family2;
+        color: $text-color-violeta2;
+        font-size: $font-size-l;
+    }
+
+    & div h4 {
+        font-family: $font-family2;
+        font-size: $font-size-m;
+    }
+
+    & div p {
+        font-style: italic;
+        font-family: $font-family;
+        font-weight: bold;
+        font-size: $font-size-m;
+    }
+}
+
+.tarjeta-servicio {
+    padding: $p-5;
+    background-color: $bg-color-gris;
+}
+
+.titulo-servicios {
+    text-align: center;
+    font-family: $font-family;
+    padding: $p-2;
+    color: $text-color-gris;
+}
+
+.servicios {
+    @include flex-center();
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.boton-servicio {
+    border-top: 1px solid violet;
+    padding: $p-2;
+    @include flex-center();
+}
+
+.zona-somos {
+    padding: $p-5;
+    background-color: $bg-color-negro;
+}
+
+.titulo-somos {
+    text-align: center;
+    color: $text-color-blanco;
+    font-family: $font-family;
+}
+
+.contenedor-parrafo {
+    margin-top: 15px;
+    @include flex-text();
+}
+
+.parrafo-somos {
+    @include flex-text();
+    color: $text-color-blanco;
+    font-family: $font-family2;
+    font-size: $font-size-s;
+}
+
+.zona-marcas {
+    padding: $p-2;
+    background-color: $bg-color-violeta;
+}
+
+.marcas {
+    @include flex-center();
+    padding: $p-4;
+}
+
+.marcas-logo {
+    @include flex-center();
+}

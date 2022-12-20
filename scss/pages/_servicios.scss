@@ -1,0 +1,23 @@
+.manicure{
+    background-color: $bg-color-rosaclaro;
+}
+.pedicure{
+    background-color: $bg-color-verdeazulado;
+}
+.esmaltados{
+    background-color: $bg-color-rosedal;
+}
+.otros-servicios{
+    background-color: $bg-color-azulado;
+}
+.servicios-flex{
+    padding: $p-5;
+    @include flex-column();
+    align-items: center;
+}
+
+.texto-servicios{
+    text-align: center;
+    color: $text-color-gris2;
+    font-family: $font-family3;
+}

@@ -1,0 +1,55 @@
+.contenedor-promo-1 {
+    padding: 1.5rem;
+    background-color: $bg-color-crema;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+
+.contenedor-promo-2 {
+    padding: 1.5rem;
+    background-color: $bg-color-rojo;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+
+.promo-flex {
+    @include flex-column();
+    padding: 1.5rem;
+}
+
+.texto-promo-1 {
+    text-align: center;
+    font-family: $font-family2;
+    font-size: $font-size-xl;
+}
+
+.texto-promo-2 {
+    text-align: center;
+    font-family: $font-family2;
+    font-size: $font-size-l;
+}
+
+.texto-promo-3 {
+    text-align: center;
+    font-family: $font-family2;
+    font-size: $font-size-m;
+}
+
+.promo-span {
+    @include flex-center();
+
+    & span {
+        text-align: center;
+        font-family: $font-family3;
+    }
+}

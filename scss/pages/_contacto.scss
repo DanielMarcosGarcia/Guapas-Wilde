@@ -1,0 +1,12 @@
+.contenedor-texto {
+    @include flex-center();
+}
+
+.contacto-flex {
+    @include flex-center();
+}
+
+.zona-contacto {
+    background-color: $bg-color-violeta2;
+    padding: 3rem;
+}
