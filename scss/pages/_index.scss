@@ -3,7 +3,7 @@ h1 {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-size: 4em;
-    font-family: $font-family3
+    font-family: $font-family3;
 }
 
 h1:hover {
@@ -11,6 +11,16 @@ h1:hover {
     transform: scale(1.05);
 }
 
+@media (max-width: 575px){
+    h1{
+        font-size: 3em;
+    }
+}
+@media (max-width: 415px){
+    h1{
+        font-size: 2em;
+    }
+}
 
 .titulo-main {
     text-align: center;
@@ -130,7 +140,6 @@ iframe{
 }
 
 .zona-marcas {
-    padding: $p-2;
     background-color: $bg-color-violeta;
 }
 

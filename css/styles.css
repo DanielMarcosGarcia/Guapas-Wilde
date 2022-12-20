@@ -20,7 +20,7 @@ header {
 
 .header__titulo {
   border-bottom: 1px solid rgb(155, 110, 168);
-  text-align: center;
+  border-radius: 4px;
   padding: 2px 2px 3px 2px;
 }
 
@@ -44,10 +44,17 @@ nav {
   font-weight: bold;
 }
 
-@media (max-width: 992px) {
-  nav {
+.navbar-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 575px) {
+  .navbar-index {
     display: flex;
-    justify-content: left;
+    justify-content: end;
+    flex-direction: row;
   }
 }
 .boton {
@@ -118,6 +125,16 @@ h1:hover {
   transform: scale(1.05);
 }
 
+@media (max-width: 575px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 415px) {
+  h1 {
+    font-size: 2em;
+  }
+}
 .titulo-main {
   text-align: center;
 }
@@ -235,7 +252,6 @@ iframe {
 }
 
 .zona-marcas {
-  padding: 0.5rem;
   background-color: rgba(192, 168, 241, 0.862745098);
 }
 
