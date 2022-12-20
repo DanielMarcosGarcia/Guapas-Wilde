@@ -54,3 +54,8 @@ padding: $p-3;
     padding-bottom: $p-4;
     font-family: $font-family;
 }
+.redes{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
