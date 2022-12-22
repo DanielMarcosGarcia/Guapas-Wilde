@@ -1,8 +1,32 @@
 header {
     background-color: $bg-color-rosa;
+
+    & a {
+        border-bottom: 1px solid rgb(155, 110, 168);
+        border-radius: 4px;
+        padding: 2px 2px 3px 2px;
+
+        & h1 {
+            color: rgb(190, 27, 177);
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            font-size: 4em;
+            font-family: $font-family3;
+            &:hover {
+                color: rgb(94, 49, 219);
+                transform: scale(1.05);
+            }
+        }
+    }
 }
-.header__titulo{
-    border-bottom: 1px solid rgb(155, 110, 168);
-    border-radius: 4px;
-    padding: 2px 2px 3px 2px;
+
+@media (max-width: 575px) {
+    header a h1 {
+        font-size: 3em;
+    }
+}
+@media (max-width: 415px) {
+    header a h1 {
+        font-size: 2em;
+    }
 }

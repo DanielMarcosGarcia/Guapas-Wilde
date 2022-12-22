@@ -21,31 +21,30 @@
     }
 }
 
-
-.promo-flex {
-    @include flex-column();
-    padding: 1.5rem;
-}
-
-.texto-promo-1 {
+.titulo-promo-1 {
     text-align: center;
     font-family: $font-family2;
     font-size: $font-size-xl;
 }
 
-.texto-promo-2 {
+.titulo-promo-2 {
     text-align: center;
     font-family: $font-family2;
     font-size: $font-size-l;
 }
 
-.texto-promo-3 {
+.parrafo-promo {
     text-align: center;
     font-family: $font-family2;
     font-size: $font-size-m;
 }
 
-.promo-span {
+.promocion-descripcion {
+    @include flex-column();
+    padding: 1.5rem;
+}
+
+.promo-advertencia {
     @include flex-center();
 
     & span {

@@ -1,0 +1,11 @@
+.select-box{
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 2px solid rgb(155, 110, 168);
+    width: 100%;
+    border-radius: 4px;
+    background: #ffe0ff;
+    & option {
+        color: $text-color-gris;
+    }
+}

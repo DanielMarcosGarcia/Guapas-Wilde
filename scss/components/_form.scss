@@ -1,0 +1,54 @@
+.formulario-contenedor {
+    padding: 30px;
+    width: 380px;
+    height: auto;
+    margin: auto;
+    font-family: 'calibri';
+    color: white;
+    background: #c8bbeb;
+    border-radius: 97% 3% 97% 3% / 2% 97% 3% 98%;
+
+    & h2 {
+        text-align: center;
+        padding-bottom: $p-4;
+        font-family: $font-family;
+        color: $text-color-gris2;
+    }
+
+    & label {
+        color: $text-color-gris;
+        letter-spacing: 1px;
+        padding: $p-2;
+    }
+
+    & .input {
+        width: 100%;
+        background: #ffe0ff;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: none;
+        border-bottom: 2px solid rgb(155, 110, 168);
+        border-radius: 4px;
+        font-size: 18px;
+    }
+}
+
+.contenedor-turnos {
+    margin-top: 15px;
+
+    & .input-checkbox {
+        width: 50%;
+        margin: 2px;
+        background: rgba(134, 99, 230, 0.144);
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: white;
+
+        &:hover {
+            background-color: rgb(248, 148, 218);
+            color: white;
+        }
+    }
+}

@@ -1,23 +1,38 @@
-.manicure{
+.contenedor-manicure{
     background-color: $bg-color-rosaclaro;
+    & p {
+        text-align: center;
+        color: $text-color-gris2;
+        font-family: $font-family3;
+    }
 }
-.pedicure{
+.contenedor-pedicure{
     background-color: $bg-color-verdeazulado;
+    & p {
+        text-align: center;
+        color: $text-color-gris2;
+        font-family: $font-family3;
+    }
 }
-.esmaltados{
+.contenedor-esmaltados{
     background-color: $bg-color-rosedal;
+    & p {
+        text-align: center;
+        color: $text-color-gris2;
+        font-family: $font-family3;
+    }
 }
-.otros-servicios{
+.contenedor-otros--servicios{
     background-color: $bg-color-azulado;
+    & p {
+        text-align: center;
+        color: $text-color-gris2;
+        font-family: $font-family3;
+    }
 }
-.servicios-flex{
+
+.servicios{
     padding: $p-5;
     @include flex-column();
     align-items: center;
-}
-
-.texto-servicios{
-    text-align: center;
-    color: $text-color-gris2;
-    font-family: $font-family3;
 }

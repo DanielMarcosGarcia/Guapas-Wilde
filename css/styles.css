@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 a {
@@ -17,13 +19,33 @@ body {
 header {
   background-color: #ffd2fb;
 }
-
-.header__titulo {
+header a {
   border-bottom: 1px solid rgb(155, 110, 168);
   border-radius: 4px;
   padding: 2px 2px 3px 2px;
 }
+header a h1 {
+  color: rgb(190, 27, 177);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 4em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header a h1:hover {
+  color: rgb(94, 49, 219);
+  transform: scale(1.05);
+}
 
+@media (max-width: 575px) {
+  header a h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 415px) {
+  header a h1 {
+    font-size: 2em;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -71,15 +93,44 @@ nav {
   color: white;
 }
 
+.boton-servicio {
+  border-top: 1px solid violet;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-boton {
+  margin-top: 20px;
+  gap: 5px;
+}
+.contenedor-boton input {
+  margin: 5px 5px;
+  width: 100%;
+  background: rgb(134, 99, 230);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  padding: 8px 15px;
+}
+.contenedor-boton input:hover {
+  background-color: rgb(248, 148, 218);
+  color: white;
+}
+
 footer {
   padding: 1rem;
   background-color: #ffd2fb;
   border-top: 1px solid rgb(155, 110, 168);
 }
 
-.footer-flex {
+.footer-redes {
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
 
 .face {
@@ -90,159 +141,203 @@ footer {
   color: black;
 }
 
-.footer-span {
+.footer-copyright {
   color: #3f3f3f;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.contenedor-texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.formulario-contenedor {
+  padding: 30px;
+  width: 380px;
+  height: auto;
+  margin: auto;
+  font-family: "calibri";
+  color: white;
+  background: #c8bbeb;
+  border-radius: 97% 3% 97% 3%/2% 97% 3% 98%;
+}
+.formulario-contenedor h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #3f3f3f;
+}
+.formulario-contenedor label {
+  color: #616161;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+}
+.formulario-contenedor .input {
+  width: 100%;
+  background: #ffe0ff;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid rgb(155, 110, 168);
+  border-radius: 4px;
+  font-size: 18px;
 }
 
-.contacto-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contenedor-turnos {
+  margin-top: 15px;
+}
+.contenedor-turnos .input-checkbox {
+  width: 50%;
+  margin: 2px;
+  background: rgba(134, 99, 230, 0.144);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+.contenedor-turnos .input-checkbox:hover {
+  background-color: rgb(248, 148, 218);
+  color: white;
 }
 
-.zona-contacto {
+.select-box {
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 2px solid rgb(155, 110, 168);
+  width: 100%;
+  border-radius: 4px;
+  background: #ffe0ff;
+}
+.select-box option {
+  color: #616161;
+}
+
+.banner-encabezado {
+  background-color: #2e2a2a;
+  padding: 3rem;
+}
+.banner-encabezado h2 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #dfdfdf;
+  font-size: xx-large;
+}
+.banner-encabezado h3 {
+  text-align: center;
+  color: #dfdfdf;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.contenedor-contacto {
   background-color: rgba(181, 170, 219, 0.9607843137);
   padding: 3rem;
 }
-
-h1 {
-  color: rgb(190, 27, 177);
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-size: 4em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.contenedor-contacto .iframe-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-contacto .iframe-map iframe {
+  border-radius: 5px;
 }
 
-h1:hover {
-  color: rgb(94, 49, 219);
-  transform: scale(1.05);
-}
-
-@media (max-width: 575px) {
-  h1 {
-    font-size: 3em;
-  }
-}
-@media (max-width: 415px) {
-  h1 {
-    font-size: 2em;
-  }
-}
-.titulo-main {
+.titulo-encabezado {
   text-align: center;
 }
-.titulo-main h2 {
+.titulo-encabezado h2 {
   color: #7651da;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.presentacion-main {
+.presentacion-page {
   padding: 1.5rem;
   background-color: rgba(181, 170, 219, 0.9607843137);
 }
-.presentacion-main .info-index {
+.presentacion-page .carousel-inner {
+  border-radius: 10px;
+}
+.presentacion-page .presentacion-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
 }
-.presentacion-main div h3 {
+.presentacion-page .presentacion-info h3 {
+  margin: 20px 20px;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.presentacion-main div p {
+.presentacion-page .presentacion-info p {
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-.carousel-inner {
+.presentacion-page .presentacion-info iframe {
   border-radius: 10px;
 }
 
-iframe {
-  border-radius: 10px;
-}
-
-.titulo-intermedio {
+.publicidad-servicios {
   text-align: center;
 }
-.titulo-intermedio div {
-  padding: 0.5rem;
+.publicidad-servicios article {
+  padding: 0.25rem;
 }
-.titulo-intermedio div h2 {
+.publicidad-servicios article h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #a510a5;
   font-size: x-large;
 }
-.titulo-intermedio div h4 {
+.publicidad-servicios article h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: medium;
 }
-.titulo-intermedio div p {
+.publicidad-servicios article p {
   font-style: italic;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: medium;
+  padding: 0.5rem;
 }
 
-.tarjeta-servicio {
+.contenedor-servicios {
   padding: 3rem;
   background-color: #d0d5e6;
 }
-
-.titulo-servicios {
+.contenedor-servicios h4 {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 0.5rem;
   color: #616161;
 }
-
-.servicios {
+.contenedor-servicios a {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-.servicios:hover {
+.contenedor-servicios a:hover {
   transform: scale(1.05);
 }
 
-.boton-servicio {
-  border-top: 1px solid violet;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.zona-somos {
+.introduccion-guapas {
   padding: 3rem;
   background-color: #2e2a2a;
 }
-
-.titulo-somos {
+.introduccion-guapas h3 {
   text-align: center;
   color: #dfdfdf;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-.contenedor-parrafo {
+.introduccion-guapas h4 {
+  text-align: center;
+  color: #dfdfdf;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.introduccion-guapas .contenedor-parrafo {
   margin-top: 15px;
   display: flex;
   align-items: center;
   text-align: center;
 }
-
-.parrafo-somos {
+.introduccion-guapas .contenedor-parrafo p {
   display: flex;
   align-items: center;
   text-align: center;
@@ -251,82 +346,60 @@ iframe {
   font-size: small;
 }
 
-.zona-marcas {
+.publicidad-marcas {
   background-color: rgba(192, 168, 241, 0.862745098);
 }
-
-.marcas {
+.publicidad-marcas div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
 }
-
-.marcas-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.zona-encabezado {
-  background-color: #2e2a2a;
-  padding: 3rem;
-}
-
-.zona-titulo {
+.publicidad-marcas div h3 {
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #dfdfdf;
-}
-
-.zona-texto {
-  text-align: center;
-  color: #dfdfdf;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: xx-large;
 }
 
 .contenedor-turno {
   padding: 3rem;
   background-color: #ffd2fb;
 }
-
-.turno-flex {
+.contenedor-turno article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
 }
-
-.titulo-turno {
+.contenedor-turno article h2 {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: xx-large;
   padding: 1rem;
+  color: #a510a5;
+}
+.contenedor-turno article p {
+  text-align: center;
+}
+.contenedor-turno article div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.texto-turno-1 {
-  text-align: center;
+.turno-horario {
   font-size: medium;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.texto-turno-2 {
-  text-align: center;
+.turno-advertencia {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.texto-turno-3 {
-  text-align: center;
+.turno-info {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: small;
   font-weight: bold;
-}
-
-.titulo-formulario {
-  text-align: center;
-  padding-bottom: 1.5rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .contenedor-promo-1 {
@@ -349,69 +422,83 @@ iframe {
   transform: scale(1.01);
 }
 
-.promo-flex {
+.titulo-promo-1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+.titulo-promo-2 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+.parrafo-promo {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.promocion-descripcion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1.5rem;
 }
 
-.texto-promo-1 {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: xx-large;
-}
-
-.texto-promo-2 {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: x-large;
-}
-
-.texto-promo-3 {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: medium;
-}
-
-.promo-span {
+.promo-advertencia {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.promo-span span {
+.promo-advertencia span {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.manicure {
+.contenedor-manicure {
   background-color: #e6c8ca;
 }
+.contenedor-manicure p {
+  text-align: center;
+  color: #3f3f3f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-.pedicure {
+.contenedor-pedicure {
   background-color: #b4c7c1;
 }
+.contenedor-pedicure p {
+  text-align: center;
+  color: #3f3f3f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-.esmaltados {
+.contenedor-esmaltados {
   background-color: #d6c8ba;
 }
-
-.otros-servicios {
-  background-color: #bccefb;
+.contenedor-esmaltados p {
+  text-align: center;
+  color: #3f3f3f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.servicios-flex {
+.contenedor-otros--servicios {
+  background-color: #bccefb;
+}
+.contenedor-otros--servicios p {
+  text-align: center;
+  color: #3f3f3f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.servicios {
   padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.texto-servicios {
-  text-align: center;
-  color: #3f3f3f;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

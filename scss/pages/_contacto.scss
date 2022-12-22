@@ -1,12 +1,11 @@
-.contenedor-texto {
-    @include flex-center();
-}
-
-.contacto-flex {
-    @include flex-center();
-}
-
-.zona-contacto {
+.contenedor-contacto {
     background-color: $bg-color-violeta2;
     padding: 3rem;
+
+    & .iframe-map {
+        @include flex-center();
+        & iframe {
+            border-radius: 5px;
+        }
+    }
 }

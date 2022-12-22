@@ -3,9 +3,10 @@ footer{
     background-color: $bg-color-rosa;
     border-top: 1px solid rgb(155, 110, 168);
 }
-.footer-flex{
+.footer-redes{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5px;
 }
 .face{
     color: black;
@@ -14,7 +15,7 @@ footer{
     color: black;
 }
 
-.footer-span{
+.footer-copyright{
     color: $text-color-gris2;
     font-family: $font-family3;
 }
