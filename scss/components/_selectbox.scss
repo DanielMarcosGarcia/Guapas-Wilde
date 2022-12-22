@@ -1,11 +1,11 @@
 .select-box{
     padding: 0.3rem;
     border: none;
-    border-bottom: 2px solid rgb(155, 110, 168);
+    border-bottom: 2px solid $color-rosa-5;
     width: 100%;
     border-radius: 4px;
-    background: #ffe0ff;
+    background: $color-rosa-6;
     & option {
-        color: $text-color-gris;
+        color: $color-gris-3;
     }
 }

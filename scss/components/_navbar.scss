@@ -1,29 +1,26 @@
 nav {
-    display: flex;
-    justify-content: center;
-}
+    @include flexible(flex, column, center, center);
 
-.navlista {
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
+    & .navbar-index {
+        @include flexible(flex, column, center, center);
 
-.navlista:hover {
-    transform: scale(1.05);
-    color: rgb(190, 27, 177);
-}
+        @include mobile (575px) {
+            @include flexible(flex, row, end, center)
+        }
 
-.inicio {
-    color: rgb(94, 49, 219);
-    font-weight: bold;
-}
+        & .inicio {
+            color: $color-violeta-3;
+            font-weight: bold;
+        }
 
-.navbar-index {
-    @include flex-column();
-}
+        & .navlista {
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
 
-@media (max-width: 575px) {
-    .navbar-index {
-        @include flex-end();
+            &:hover {
+                transform: scale(1.05);
+                color: $color-violeta-4;
+            }
+        }
     }
 }

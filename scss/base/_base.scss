@@ -6,10 +6,12 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
-    color: rgb(165, 16, 165);
+    color: $color-rosa-3;
 }
+
 body {
-    background-color: $bg-color-gris2;
+    background-color: $color-gris-2;
 }

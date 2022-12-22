@@ -1,6 +1,6 @@
 .contenedor-promo-1 {
     padding: 1.5rem;
-    background-color: $bg-color-crema;
+    background-color: $color-crema;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
@@ -12,7 +12,7 @@
 
 .contenedor-promo-2 {
     padding: 1.5rem;
-    background-color: $bg-color-rojo;
+    background-color: $color-rojo;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
@@ -40,12 +40,12 @@
 }
 
 .promocion-descripcion {
-    @include flex-column();
+    @include flexible(flex, column, center, center);
     padding: 1.5rem;
 }
 
 .promo-advertencia {
-    @include flex-center();
+    @include flexible(flex, row, center, center);
 
     & span {
         text-align: center;

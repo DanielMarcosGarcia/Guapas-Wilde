@@ -2,24 +2,21 @@
     text-align: center;
 
     & h2 {
-        color: $text-color-violeta;
+        color: $color-violeta-3;
         font-family: $font-family
     }
 }
 
 .presentacion-page {
     padding: $p-4;
-    background-color: $bg-color-violeta2;
+    background-color: $color-violeta-2;
 
     & .carousel-inner {
         border-radius: 10px;
     }
 
     .presentacion-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexible (flex, column, center, center);
         padding: $p-4;
 
         & h3 {
@@ -48,7 +45,7 @@
 
     & article h2 {
         font-family: $font-family2;
-        color: $text-color-violeta2;
+        color: $color-violeta-4;
         font-size: $font-size-l;
     }
 
@@ -68,17 +65,17 @@
 
 .contenedor-servicios {
     padding: $p-5;
-    background-color: $bg-color-gris;
+    background-color: $color-gris;
 
     & h4 {
         text-align: center;
         font-family: $font-family;
         padding: $p-2;
-        color: $text-color-gris;
+        color: $color-gris-3;
     }
 
     & a {
-        @include flex-center();
+        @include flexible(flex, row, center, center);
         cursor: pointer;
         transition: all 0.3s ease 0s;
 
@@ -90,16 +87,16 @@
 
 .introduccion-guapas {
     padding: $p-5;
-    background-color: $bg-color-negro;
+    background-color: $color-negro;
 
     & h3 {
         text-align: center;
-        color: $text-color-blanco;
+        color: $color-blanco;
         font-family: $font-family;
     }
     & h4 {
         text-align: center;
-        color: $text-color-blanco;
+        color: $color-blanco;
         font-family: $font-family;
     }
     .contenedor-parrafo {
@@ -107,7 +104,7 @@
         @include flex-text();
         & p {
             @include flex-text();
-            color: $text-color-blanco;
+            color: $color-blanco;
             font-family: $font-family2;
             font-size: $font-size-s;
         }
@@ -115,9 +112,9 @@
 }
 
 .publicidad-marcas {
-        background-color: $bg-color-violeta;
+        background-color: $color-violeta;
         & div {
-            @include flex-center();
+            @include flexible(flex, row, center, center);
             padding: $p-4;
             & h3 {
                 text-align: center;

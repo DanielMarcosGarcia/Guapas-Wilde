@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: rgb(165, 16, 165);
+  color: #a510a5;
 }
 
 body {
@@ -20,67 +20,67 @@ header {
   background-color: #ffd2fb;
 }
 header a {
-  border-bottom: 1px solid rgb(155, 110, 168);
+  border-bottom: 1px solid #9b6ea8;
   border-radius: 4px;
   padding: 2px 2px 3px 2px;
 }
 header a h1 {
-  color: rgb(190, 27, 177);
+  color: #a510a5;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-size: 4em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header a h1:hover {
-  color: rgb(94, 49, 219);
+  color: #7651da;
   transform: scale(1.05);
 }
-
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   header a h1 {
     font-size: 3em;
   }
 }
-@media (max-width: 415px) {
+@media screen and (max-width: 415px) {
   header a h1 {
     font-size: 2em;
   }
 }
+
 nav {
-  display: flex;
-  justify-content: center;
-}
-
-.navlista {
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.navlista:hover {
-  transform: scale(1.05);
-  color: rgb(190, 27, 177);
-}
-
-.inicio {
-  color: rgb(94, 49, 219);
-  font-weight: bold;
-}
-
-.navbar-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
-@media (max-width: 575px) {
-  .navbar-index {
+nav .navbar-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 575px) {
+  nav .navbar-index {
     display: flex;
-    justify-content: end;
     flex-direction: row;
+    justify-content: end;
+    align-items: center;
   }
 }
+nav .navbar-index .inicio {
+  color: #7651da;
+  font-weight: bold;
+}
+nav .navbar-index .navlista {
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+nav .navbar-index .navlista:hover {
+  transform: scale(1.05);
+  color: #a510a5;
+}
+
 .boton {
-  background: rgb(134, 99, 230);
+  background: #8663e6;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -89,14 +89,15 @@ nav {
   padding: 8px 15px;
 }
 .boton:hover {
-  background-color: rgb(248, 148, 218);
-  color: white;
+  background-color: #f894da;
+  color: #dfdfdf;
 }
 
 .boton-servicio {
-  border-top: 1px solid violet;
+  border-top: 1px solid #a510a5;
   padding: 0.5rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -108,7 +109,7 @@ nav {
 .contenedor-boton input {
   margin: 5px 5px;
   width: 100%;
-  background: rgb(134, 99, 230);
+  background: #8663e6;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -117,32 +118,27 @@ nav {
   padding: 8px 15px;
 }
 .contenedor-boton input:hover {
-  background-color: rgb(248, 148, 218);
-  color: white;
+  background-color: #f894da;
+  color: #dfdfdf;
 }
 
 footer {
   padding: 1rem;
   background-color: #ffd2fb;
-  border-top: 1px solid rgb(155, 110, 168);
+  border-top: 1px solid #9b6ea8;
 }
-
-.footer-redes {
+footer .footer-redes {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 5px;
 }
-
-.face {
-  color: black;
+footer .footer-redes a {
+  color: #a510a5;
 }
-
-.insta {
-  color: black;
-}
-
-.footer-copyright {
-  color: #3f3f3f;
+footer .footer-redes .footer-copyright {
+  color: #616161;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -152,7 +148,7 @@ footer {
   height: auto;
   margin: auto;
   font-family: "calibri";
-  color: white;
+  color: #dfdfdf;
   background: #c8bbeb;
   border-radius: 97% 3% 97% 3%/2% 97% 3% 98%;
 }
@@ -189,17 +185,17 @@ footer {
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  color: white;
+  color: #dfdfdf;
 }
 .contenedor-turnos .input-checkbox:hover {
   background-color: rgb(248, 148, 218);
-  color: white;
+  color: #dfdfdf;
 }
 
 .select-box {
   padding: 0.3rem;
   border: none;
-  border-bottom: 2px solid rgb(155, 110, 168);
+  border-bottom: 2px solid #9b6ea8;
   width: 100%;
   border-radius: 4px;
   background: #ffe0ff;
@@ -223,19 +219,6 @@ footer {
   color: #dfdfdf;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: medium;
-}
-
-.contenedor-contacto {
-  background-color: rgba(181, 170, 219, 0.9607843137);
-  padding: 3rem;
-}
-.contenedor-contacto .iframe-map {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor-contacto .iframe-map iframe {
-  border-radius: 5px;
 }
 
 .titulo-encabezado {
@@ -308,6 +291,7 @@ footer {
 }
 .contenedor-servicios a {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -351,6 +335,7 @@ footer {
 }
 .publicidad-marcas div {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
@@ -369,6 +354,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 .contenedor-turno article h2 {
@@ -400,61 +386,6 @@ footer {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: small;
   font-weight: bold;
-}
-
-.contenedor-promo-1 {
-  padding: 1.5rem;
-  background-color: #e7dfd4;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-.contenedor-promo-1:hover {
-  transform: scale(1.01);
-}
-
-.contenedor-promo-2 {
-  padding: 1.5rem;
-  background-color: #e67373;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-.contenedor-promo-2:hover {
-  transform: scale(1.01);
-}
-
-.titulo-promo-1 {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: xx-large;
-}
-
-.titulo-promo-2 {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: x-large;
-}
-
-.parrafo-promo {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: medium;
-}
-
-.promocion-descripcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem;
-}
-
-.promo-advertencia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.promo-advertencia span {
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .contenedor-manicure {
@@ -499,6 +430,78 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: center;
+}
+
+.contenedor-promo-1 {
+  padding: 1.5rem;
+  background-color: #e7dfd4;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.contenedor-promo-1:hover {
+  transform: scale(1.01);
+}
+
+.contenedor-promo-2 {
+  padding: 1.5rem;
+  background-color: #e67373;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.contenedor-promo-2:hover {
+  transform: scale(1.01);
+}
+
+.titulo-promo-1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+.titulo-promo-2 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+.parrafo-promo {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.promocion-descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.promo-advertencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.promo-advertencia span {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contenedor-contacto {
+  background-color: rgba(181, 170, 219, 0.9607843137);
+  padding: 3rem;
+}
+.contenedor-contacto .iframe-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-contacto .iframe-map iframe {
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

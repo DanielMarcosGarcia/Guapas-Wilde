@@ -1,9 +1,9 @@
 .contenedor-contacto {
-    background-color: $bg-color-violeta2;
+    background-color: $color-violeta-2;
     padding: 3rem;
 
     & .iframe-map {
-        @include flex-center();
+        @include flexible(flex, row, center, center);
         & iframe {
             border-radius: 5px;
         }

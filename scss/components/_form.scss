@@ -4,7 +4,7 @@
     height: auto;
     margin: auto;
     font-family: 'calibri';
-    color: white;
+    color: $color-blanco;
     background: #c8bbeb;
     border-radius: 97% 3% 97% 3% / 2% 97% 3% 98%;
 
@@ -12,11 +12,11 @@
         text-align: center;
         padding-bottom: $p-4;
         font-family: $font-family;
-        color: $text-color-gris2;
+        color: $color-gris-4;
     }
 
     & label {
-        color: $text-color-gris;
+        color: $color-gris-3;
         letter-spacing: 1px;
         padding: $p-2;
     }
@@ -44,11 +44,11 @@
         border-radius: 2px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
-        color: white;
+        color: $color-blanco;
 
         &:hover {
             background-color: rgb(248, 148, 218);
-            color: white;
+            color: $color-blanco;
         }
     }
 }

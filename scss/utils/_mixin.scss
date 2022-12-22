@@ -1,7 +1,8 @@
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flexible ($dis, $direccion, $just, $align) {
+    display: $dis;
+    flex-direction: $direccion;
+    justify-content: $just;
+    align-items: $align;
 }
 
 @mixin flex-text {
@@ -10,14 +11,8 @@
     text-align: center;
 }
 
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-@mixin flex-end{
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
+@mixin mobile ($medida) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
 }

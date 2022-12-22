@@ -1,9 +1,9 @@
 .contenedor-turno {
     padding: $p-5;
-    background-color: $bg-color-rosa;
+    background-color: $color-rosa;
 
     & article {
-        @include flex-column();
+        @include flexible(flex, column, center, center);
         padding: $p-3;
 
         & h2 {
@@ -11,7 +11,7 @@
             font-family: $font-family;
             font-size: $font-size-xl;
             padding: $p-3;
-            color: $text-color-violeta2;
+            color: $color-violeta-4;
         }
 
         & p {
