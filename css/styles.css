@@ -13,15 +13,15 @@ a {
 }
 
 body {
-  background-color: rgba(222, 206, 253, 0.862745098);
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/watercolor.png);
 }
 
 header {
-  background-color: #ffd2fb;
-}
-header a {
+  background-color: rgba(255, 210, 251, 0.7450980392);
   border-bottom: 1px solid #9b6ea8;
   border-radius: 4px;
+}
+header a {
   padding: 2px 2px 3px 2px;
 }
 header a h1 {
@@ -78,6 +78,10 @@ nav .navbar-index .navlista:hover {
   transform: scale(1.05);
   color: #a510a5;
 }
+nav .navbar-index div {
+  border-top: 1px solid #9b6ea8;
+  border-radius: 4px;
+}
 
 .boton {
   background: #8663e6;
@@ -124,7 +128,7 @@ nav .navbar-index .navlista:hover {
 
 footer {
   padding: 1rem;
-  background-color: #ffd2fb;
+  background-color: rgba(255, 210, 251, 0.7450980392);
   border-top: 1px solid #9b6ea8;
 }
 footer .footer-redes {
@@ -227,6 +231,9 @@ footer .footer-redes .footer-copyright {
 .titulo-encabezado h2 {
   color: #7651da;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-shadow: 4px 4px 2px #c0a8f1;
 }
 
 .presentacion-page {
@@ -258,14 +265,15 @@ footer .footer-redes .footer-copyright {
 
 .publicidad-servicios {
   text-align: center;
-}
-.publicidad-servicios article {
-  padding: 0.25rem;
+  background-color: rgba(255, 210, 251, 0.7450980392);
+  border: 1px solid #a510a5;
+  border-radius: 20px;
 }
 .publicidad-servicios article h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #a510a5;
   font-size: x-large;
+  padding-top: 1rem;
 }
 .publicidad-servicios article h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -303,7 +311,7 @@ footer .footer-redes .footer-copyright {
 
 .introduccion-guapas {
   padding: 3rem;
-  background-color: #2e2a2a;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/denim.png);
 }
 .introduccion-guapas h3 {
   text-align: center;
@@ -331,7 +339,7 @@ footer .footer-redes .footer-copyright {
 }
 
 .publicidad-marcas {
-  background-color: rgba(192, 168, 241, 0.862745098);
+  background-color: #c0a8f1;
 }
 .publicidad-marcas div {
   display: flex;

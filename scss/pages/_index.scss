@@ -1,9 +1,13 @@
 .titulo-encabezado {
     text-align: center;
+    
 
     & h2 {
         color: $color-violeta-3;
-        font-family: $font-family
+        font-family: $font-family;
+        font-size: $font-size-xl;
+        font-weight: bold;
+        text-shadow: 4px 4px 2px $color-violeta;
     }
 }
 
@@ -38,15 +42,15 @@
 
 .publicidad-servicios {
     text-align: center;
-
-    & article {
-        padding: $p-1;
-    }
+    background-color: $color-rosa-transp;
+    border: 1px solid $color-violeta-4;
+    border-radius: 20px;
 
     & article h2 {
         font-family: $font-family2;
         color: $color-violeta-4;
         font-size: $font-size-l;
+        padding-top: $p-3;
     }
 
     & article h3 {
@@ -87,7 +91,7 @@
 
 .introduccion-guapas {
     padding: $p-5;
-    background-color: $color-negro;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/denim.png);
 
     & h3 {
         text-align: center;

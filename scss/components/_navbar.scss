@@ -22,5 +22,10 @@ nav {
                 color: $color-violeta-4;
             }
         }
+
+        & div {
+            border-top: 1px solid $color-rosa-5;
+            border-radius: 4px;
+        }
     }
 }

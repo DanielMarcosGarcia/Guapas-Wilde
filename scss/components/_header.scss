@@ -1,9 +1,9 @@
 header {
-    background-color: $color-rosa;
+    background-color: $color-rosa-transp;
+    border-bottom: 1px solid $color-rosa-5;
+    border-radius: 4px;
 
     & a {
-        border-bottom: 1px solid $color-rosa-5;
-        border-radius: 4px;
         padding: 2px 2px 3px 2px;
 
         & h1 {
@@ -12,13 +12,16 @@ header {
             transition: all 0.3s ease 0s;
             font-size: 4em;
             font-family: $font-family3;
+
             &:hover {
                 color: $color-violeta-3;
                 transform: scale(1.05);
             }
-            @include mobile (575px){
+
+            @include mobile (575px) {
                 font-size: 3em;
             }
+
             @include mobile (415px) {
                 font-size: 2em;
             }
