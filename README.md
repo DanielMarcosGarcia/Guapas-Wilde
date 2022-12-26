@@ -1,10 +1,6 @@
 <div id="header" align="center">
 
-    <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe
-            src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="100%" height="100%" style="position:absolute"
-            frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-    <p><a href="https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC">via GIPHY</a></p>
-
+    <img src="https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC" width="200">
     <h1 align="center">Hola👋🏼 , Soy Daniel Garcia</h1>
     <h3 align="center">Soy estudiante de CoderHouse, cursando la carrera fullstack.</h3>
 
@@ -41,14 +37,18 @@
     <h3>Lenguajes y Herramientas</h3>
 
     <div>
-        <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40">
-        <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="CSS3" alt="css3" width="40" height="40">
-        <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg" title="BOOTSTRAP" alt="bootstrap" width="40" height="40">
-        <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="SASS" alt="sass" width="40" height="40">
-        <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="PYTHON" alt="python" width="40" height="40">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5"
+            alt="HTML" width="40" height="40">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="CSS3" alt="css3"
+            width="40" height="40">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg"
+            title="BOOTSTRAP" alt="bootstrap" width="40" height="40">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="SASS" alt="sass"
+            width="40" height="40">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="PYTHON"
+            alt="python" width="40" height="40">
     </div>
 
 </div>
 
 ---
-
