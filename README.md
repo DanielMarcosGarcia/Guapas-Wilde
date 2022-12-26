@@ -1,5 +1,10 @@
 # Proyecto CoderHouse
-> Curso de Desarrollo Web Carrera Full Stack
+
+> Curso de Desarrollo Web
+><br>
+> Carrera Full Stack
+><br>
+>[**Consigna**](https://drive.google.com/file/d/1QyWViVwE6aTSlQJcatr3UhLGEtWHuVPw/view?usp=sharing)
 
 ### Descripcion
 
@@ -9,7 +14,7 @@
 ## Autor
 **"Daniel Garcia"**
 
-[**Consigna**](https://drive.google.com/file/d/1QyWViVwE6aTSlQJcatr3UhLGEtWHuVPw/view?usp=sharing)
+
 
 ### Estructura del proyecto
 
