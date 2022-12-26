@@ -35,7 +35,7 @@
     ├───utils
     └───main
 ├─index
-├─README.md
+├─README
 ```
 ---
 ### Wireframes
