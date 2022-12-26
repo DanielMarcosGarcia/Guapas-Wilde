@@ -10,7 +10,7 @@
 
 > "[Guapas Wilde](https://estetica-guapaswilde.netlify.app/)" es un sitio web full responsive con una navegacion sencilla e intuitiva.
 > <br>
-> Este proyecto fue creado con HTML5, CSS3, SASS, & BOOTSTRAP.
+> Este proyecto hecho para la carrera fullstack de CoderHouse fue creado con HTML5, CSS3, SASS, & BOOTSTRAP.
 ## Autor
 **"Daniel Garcia"**
 
