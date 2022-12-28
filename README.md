@@ -1,19 +1,16 @@
-# Proyecto CoderHouse
+# Proyecto HTML5
 
 > Curso de Desarrollo Web
 ><br>
 > Carrera Full Stack
 ><br>
->[**Consigna**](https://drive.google.com/file/d/1QyWViVwE6aTSlQJcatr3UhLGEtWHuVPw/view?usp=sharing)
+>[**Consigna**](https://drive.google.com/file/d/1aETp8jNWwDWO-g6TcJzoKM5Y0Lvib6Ud/view?usp=sharing)
 
 ### Descripcion
 
 > "[Guapas Wilde](https://estetica-guapaswilde.netlify.app/)" es un sitio web full responsive con una navegacion sencilla e intuitiva.
 > <br>
 > Este proyecto hecho para la carrera fullstack de CoderHouse fue creado con HTML5, CSS3, SASS, & BOOTSTRAP.
-## Autor
-**"Daniel Garcia"**
-
 
 
 ### Estructura del proyecto
@@ -37,8 +34,8 @@
 ├─index
 ├─README
 ```
----
-### Wireframes
+# Wireframes
+
 <div align="center">
 <img height="400" src=https://user-images.githubusercontent.com/119471246/209497072-438ffed7-4c3e-40a5-96ea-c48e4771b26b.png  />
 <img height="400" src="https://user-images.githubusercontent.com/119471246/209497071-f8d57e79-5aa0-41b5-b6c2-bc235ec4f781.png"  />
@@ -55,4 +52,5 @@
 <img height="500" src="https://user-images.githubusercontent.com/119471246/209497453-520b2774-3403-4506-8d17-96b0bff97aa0.png"  />
 </div>
 
-
+## Autor
+**Daniel Garcia**
