@@ -50,7 +50,10 @@
 <img height="500" src="https://user-images.githubusercontent.com/119471246/209497456-f535aa49-3eaf-4957-bc52-def7fa42afab.png"  />
 <img height="500" src="https://user-images.githubusercontent.com/119471246/209497454-435ab240-e350-4b02-a719-62d3d60753a8.png"  />
 <img height="500" src="https://user-images.githubusercontent.com/119471246/209497453-520b2774-3403-4506-8d17-96b0bff97aa0.png"  />
+</div>]
+
+<div align="right">
+<h2>Autor</h2>
+Daniel Garcia
 </div>
 
-## Autor
-**Daniel Garcia**
