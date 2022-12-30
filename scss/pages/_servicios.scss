@@ -34,5 +34,4 @@
 .servicios{
     padding: $p-5;
     @include flexible(flex, column, center, center);
-    align-items: center;
 }
