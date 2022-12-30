@@ -60,9 +60,3 @@
 Daniel Garcia
 </div>
 
-
-<div align="right">
-<h2>Autor</h2>
-Daniel Garcia
-</div>
-
